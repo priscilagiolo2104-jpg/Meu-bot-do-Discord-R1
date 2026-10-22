@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Políticas do Aplicativo Discord</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #313338;
+            color: #dbdee1;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #1e1f22;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #5865f2;
+        }
+        nav button {
+            background-color: #5865f2;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+        nav button:hover {
+            background-color: #4752c4;
+        }
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #2b2d31;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+        .content-section {
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+        h1, h2 {
+            color: #ffffff;
+        }
+        a {
+            color: #00a8fc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Políticas Legais do Bot</h1>
+    <nav>
+        <button onclick="showSection('terms')">Termos de Serviço</button>
+        <button onclick="showSection('privacy')">Política de Privacidade</button>
+    </nav>
+</header>
+
+<div class="container">
+    <!-- SEÇÃO: TERMOS DE SERVIÇO -->
+    <div id="terms" class="content-section active">
+        <h2>Termos de Serviço</h2>
+        <p>Ao adicionar e usar o bot <strong>[Nome do Seu Bot]</strong> em seu servidor do Discord, você concorda explicitamente com os termos descritos abaixo:</p>
+        
+        <h3>1. Aceitação dos Termos</h3>
+        <p>Estes termos regem o uso do aplicativo. Se você não concorda com qualquer parte destas regras, não deve autorizar ou utilizar o bot em seu servidor.</p>
+        
+        <h3>2. Uso Permitido e Restrições</h3>
+        <p>Você concorda em usar o bot apenas para fins legítimos. É estritamente proibido:</p>
+        <ul>
+            <li>Utilizar o bot para violar os Termos de Serviço Globais ou as Diretrizes da Comunidade do Discord.</li>
+            <li>Tentar explorar falhas, engenharia reversa ou sobrecarregar a infraestrutura do bot de forma maliciosa.</li>
+            <li>Usar comandos para assediar, enviar spam ou aplicar golpes em outros usuários.</li>
+        </ul>
+
+        <h3>3. Disponibilidade e Isenção de Responsabilidade</h3>
+        <p>O aplicativo é fornecido "como está", sem garantias de funcionamento 100% ininterrupto. O desenvolvedor reserva-se o direito de modificar recursos, pausar o serviço para manutenção ou encerrar o projeto a qualquer momento sem aviso prévio.</p>
+
+        <h3>4. Contato</h3>
+        <p>Para dúvidas sobre estes Termos de Serviço, entre em contato através do e-mail: <strong>[Seu E-mail de Contato]</strong>.</p>
+    </div>
+
+    <!-- SEÇÃO: POLÍTICA DE PRIVACIDADE -->
+    <div id="privacy" class="content-section">
+        <h2>Política de Privacidade</h2>
+        <p>Sua privacidade é importante para nós. Esta política explica de forma clara quais informações o <strong>[Nome do Seu Bot]</strong> acessa e como elas são processadas.</p>
+        
+        <h3>1. Dados Coletados</h3>
+        <p>Para funcionar corretamente, o bot interage com dados técnicos básicos disponibilizados pela API do Discord, que podem incluir:</p>
+        <ul>
+            <li>IDs de Usuário, IDs de Servidor e IDs de Canais (necessários para identificar onde os comandos são executados).</li>
+            <li>Conteúdo das mensagens que mencionam diretamente o bot ou iniciam Comandos de Barra (Slash Commands).</li>
+        </ul>
+
+        <h3>2. Armazenamento e Compartilhamento de Dados</h3>
+        <p><strong>Nós não vendemos e não compartilhamos seus dados com terceiros.</strong> Quaisquer dados retidos temporariamente em cache são utilizados exclusivamente para a execução interna das funções do bot e são descartados assim que não forem mais necessários.</p>
+        
+        <h3>3. Seus Direitos</h3>
+        <p>Você pode remover o bot do seu servidor a qualquer momento ("kick" ou "ban"), o que cessará imediatamente qualquer acesso aos dados do servidor em tempo real.</p>
+
+        <h3>4. Alterações nesta Política</h3>
+        <p>Podemos atualizar esta política periodicamente. A continuação do uso do bot após alterações constitui aceitação da nova política.</p>
+
+        <h3>5. Contato</h3>
+        <p>Se você deseja solicitar a exclusão de qualquer dado ou tirar dúvidas de privacidade, entre em contato via: <strong>[Seu E-mail de Contato]</strong>.</p>
+    </div>
+</div>
+
+<script>
+    function showSection(sectionId) {
+        document.querySelectorAll('.content-section').forEach(section => {
+            section.classList.remove('active');
+        });
+        document.getElementById(sectionId).classList.add('active');
+    }
+</script>
+
+</body>
+                                </html>
+                                
